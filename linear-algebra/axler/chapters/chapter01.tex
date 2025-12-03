@@ -1,17 +1,44 @@
 \chapter{Vector Spaces}
 
-\section{Introduction}
+\section{Definition of a Vector Space}
 
-\begin{definition}\label{def:vspace}
-A \vocab{vector space} over field $\F$ is a set $V$ with...
-\end{definition}
-
-\begin{theorem}\label{thm:basis-exists}
-Every vector space has a basis.
+\begin{theorem}\label{thm:unque-zero}
+A vector space has a unique additive identity.
 \end{theorem}
 
 \begin{proof}
-Use Zorn's lemma...
+Suppose both $0$ and $0'$ are additive identities in a vector space $V$. Then:
+\[
+0 = 0 + 0' = 0' + 0 = 0'.
+\] 
 \end{proof}
 
-By \cref{thm:basis-exists}, we know... or by \Cref{def:vspace} at the start...
+\begin{remark}
+    Similarly structured proofs exist to show other basic theorems such as the uniqueness of additive inverses and the property that multiplying any vector by the scalar zero yields the zero vector.
+\end{remark}
+
+\section{Subspaces}
+
+\begin{theorem}\label{thm:direct-sum-iff-intersection-zero}
+    Suppose $U$ and $W$ are subspaces of V. Then:
+    \[
+    U \oplus W \iff U \cap W = \{0\}
+    \]
+    
+\end{theorem}
+
+\begin{proof}  
+\textbf{Forward Implication} $U \oplus W \implies U \cap W = \{0\}$: \\
+Seeking contradiction, $\exists v \in U \cap W$ s.t. $v \ne 0$. As $v \in W$, $-v$ is also an element of $W$. However, this gives two ways to construct $0$, namely:
+\[
+0 + 0 = 0
+\] and
+\[
+v + (-v) = 0
+\]
+Leading to contradiction and hence proving the forward implication. \\ 
+\textbf{Backward Implication} $ U \cap W = \{0\} \implies U \oplus W$
+\end{proof}
+
+
+% By \cref{thm:basis-exists}, we know... or by \Cref{def:vspace} at the start...
