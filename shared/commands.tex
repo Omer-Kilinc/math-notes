@@ -1,0 +1,110 @@
+% ============================================
+% NUMBER SYSTEMS
+% ============================================
+\newcommand{\N}{\mathbb{N}}  % Natural numbers
+\newcommand{\Z}{\mathbb{Z}}  % Integers
+\newcommand{\Q}{\mathbb{Q}}  % Rationals
+\newcommand{\R}{\mathbb{R}}  % Reals
+\newcommand{\C}{\mathbb{C}}  % Complex numbers
+\newcommand{\F}{\mathbb{F}}  % Arbitrary field
+\newcommand{\K}{\mathbb{K}}  % Another field notation
+
+% Extensions
+\newcommand{\Rn}{\R^n}
+\newcommand{\Rm}{\R^m}
+\newcommand{\Cn}{\C^n}
+
+% ============================================
+% COMMON OPERATORS
+% ============================================
+\DeclareMathOperator{\im}{im}           % Image
+\DeclareMathOperator{\Id}{Id}           % Identity
+\DeclareMathOperator{\rank}{rank}       % Rank
+\DeclareMathOperator{\nullity}{nullity} % Nullity
+\DeclareMathOperator{\Span}{span}       % Span
+\DeclareMathOperator{\Ker}{ker}         % Kernel
+\DeclareMathOperator{\coker}{coker}     % Cokernel
+\DeclareMathOperator{\sgn}{sgn}         % Sign
+\DeclareMathOperator{\lcm}{lcm}         % Least common multiple
+\DeclareMathOperator{\Ann}{Ann}         % Annihilator
+
+% ============================================
+% DELIMITERS (auto-sizing)
+% ============================================
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\inner}[2]{\left\langle #1, #2 \right\rangle}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\Set}[2]{\left\{#1 \,\middle|\, #2\right\}}  % {x | condition}
+\newcommand{\paren}[1]{\left(#1\right)}
+\newcommand{\bracket}[1]{\left[#1\right]}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+
+% ============================================
+% COMMON SHORTCUTS
+% ============================================
+\newcommand{\eps}{\varepsilon}
+% \newcommand{\phi}{\varphi}
+\newcommand{\del}{\partial}
+\newcommand{\To}{\longrightarrow}
+\newcommand{\too}{\longrightarrow}
+\newcommand{\into}{\hookrightarrow}      % Injection
+\newcommand{\onto}{\twoheadrightarrow}   % Surjection
+\newcommand{\isom}{\cong}                % Isomorphism
+
+% Quantifiers
+\newcommand{\fa}{\forall}
+\newcommand{\ex}{\exists}
+
+% Logic
+\newcommand{\st}{\text{ such that }}
+\newcommand{\AND}{\quad\text{and}\quad}
+\newcommand{\OR}{\quad\text{or}\quad}
+
+% ============================================
+% CALCULUS
+% ============================================
+% Derivatives
+\newcommand{\dd}[2]{\frac{d#1}{d#2}}
+\newcommand{\ddn}[3]{\frac{d^{#3}#1}{d#2^{#3}}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdd}[3]{\frac{\partial^{#3} #1}{\partial #2^{#3}}}
+
+% Integrals
+\newcommand{\Int}{\int\limits}
+
+% ============================================
+% PROBABILITY & STATISTICS
+% ============================================
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Corr}{Corr}
+\newcommand{\E}{\mathbb{E}}      % Expectation
+\newcommand{\Prob}{\mathbb{P}}   % Probability
+
+% ============================================
+% MATRICES AND LINEAR ALGEBRA
+% ============================================
+\DeclareMathOperator{\tr}{tr}         % Trace
+\DeclareMathOperator{\diag}{diag}     % Diagonal
+\DeclareMathOperator{\adj}{adj}       % Adjugate
+
+% ============================================
+% PERSONAL NOTES AND TODOS
+% ============================================
+% \newcommand{\todo}[1]{\textcolor{red}{\textbf{TODO: #1}}}
+% \newcommand{\note}[1]{\textcolor{blue}{\textbf{Note: #1}}}
+% \newcommand{\warning}[1]{\textcolor{orange}{\textbf{Warning: #1}}}
+% \newcommand{\question}[1]{\textcolor{purple}{\textbf{Question: #1}}}
+
+% ============================================
+% TEXT FORMATTING IN MATH MODE
+% ============================================
+\newcommand{\vocab}[1]{\textbf{\color{blue}#1}}  % Highlight new terms
+\newcommand{\term}[1]{\emph{#1}}                  % Emphasize terms
+
+% ============================================
+% EQUATION ANNOTATIONS
+% ============================================
+\newcommand{\eqexpl}[1]{\quad\text{(#1)}}  % Explanation next to equation

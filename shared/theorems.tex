@@ -1,0 +1,55 @@
+% ============================================
+% THEOREM-LIKE ENVIRONMENTS
+% ============================================
+% All numbered together within chapters
+% Format: Theorem 1.1, Lemma 1.2, Definition 1.3, etc.
+
+\theoremstyle{plain}  % Italic text, used for theorems
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{claim}[theorem]{Claim}
+
+% ============================================
+% DEFINITION-STYLE ENVIRONMENTS
+% ============================================
+\theoremstyle{definition}  % Upright text
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{algorithm}[theorem]{Algorithm}
+
+% ============================================
+% REMARK-STYLE ENVIRONMENTS
+% ============================================
+\theoremstyle{remark}  % Upright text, less emphasis
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{note}[theorem]{Note}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{convention}[theorem]{Convention}
+\newtheorem{recall}[theorem]{Recall}
+
+% ============================================
+% UNNUMBERED VERSIONS
+% ============================================
+% For special cases where you don't want numbering
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{proposition*}{Proposition}
+\newtheorem*{corollary*}{Corollary}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{example*}{Example}
+\newtheorem*{remark*}{Remark}
+\newtheorem*{note*}{Note}
+
+% ============================================
+% SOLUTION ENVIRONMENT
+% ============================================
+\newenvironment{solution}
+  {\begin{proof}[Solution]}
+  {\end{proof}}
